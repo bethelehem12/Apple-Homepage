@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">Please Fill Out This Form</h1>
+    <form
+      action="http://localhost:1234/addiphones"
+      method="POST"
+      id="productForm"
+    >
+      <!-- Product -->
+      <label for="product_name">Product Name:</label>
+      <input type="text" id="product_name" name="product_name" required />
+
+      <label for="product_url">Product URL:</label>
+      <input type="url" id="product_url" name="product_url" required />
+
+      <!-- Product Description -->
+      <label for="brief_description">Brief Description:</label>
+      <input type="text" id="brief_description" name="product_brief_description" />
+
+      <label for="product_description"> Product Description:</label>
+      <textarea id="product_description" name="product_description"></textarea>
+
+      <label for="product_img">Product Image URL:</label>
+      <input type="url" id="product_img" name="product_img" />
+
+      <label for="product_link">Product Link:</label>
+      <input type="url" id="product_link" name="product_link" />
+
+      <!-- Product Price -->
+      <label for="starting_price">Starting Price:</label>
+      <input type="number" id="starting_price" name="starting_price" required />
+
+      <label for="price_range">Price Range:</label>
+      <input type="text" id="price_range" name="price_range" />
+
+      <!-- User Info -->
+      <label for="user_name">User Name:</label>
+      <input type="text" id="user_name" name="user_name" required />
+
+      <label for="user_password">User Password:</label>
+      <input type="password" id="user_password" name="user_password" required />
+      <!-- submit button -->
+      <button type="submit">Submit</button>
+    </form>
+    <p
+      id="confirmation"
+      style="
+        color: rgba(255, 64, 47, 0.824);
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+      "
+    ></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
